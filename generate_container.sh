@@ -15,7 +15,6 @@ generate() {
 		--ndfreeze date=${version_date}T000000Z \
 		--pkg-manager=apt \
 		--install vim wget strace time ncdu gnupg curl procps git pigz less tree \
-		--run "$run_cmd" \
 		--run "curl -sL https://deb.nodesource.com/setup_14.x | bash - " \
 		--install nodejs \
 		--run "cd /tmp/ && git clone -b env/ohbm http://github.com/sparkletown/sparkle && cd sparkle && npm install -g && cd /tmp && rm -rf sparkle" \
